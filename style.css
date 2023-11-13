@@ -1,0 +1,211 @@
+.container {
+    max-width: 80vw;
+    background-color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Crimson Pro', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&family=Montserrat&family=Source+Sans+3:wght@300&display=swap');
+
+.topLeft {
+    width: 50%;
+    height: 50vh;
+}
+
+.topRight {
+    width: 50%;
+    height: 50vh;
+}
+
+.player {
+    width: 370px;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.logo2 {
+    font-size: 100px;
+    padding-bottom: 20px;
+    color: rgb(244 116 94);
+}
+
+.tagline {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.flex_media {
+    display: none;
+}
+
+.football {
+    height: 100px;
+}
+
+.section1 h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.section2 h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.section3 h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.section4 h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.card img {
+    height: 100px;
+    width: 100px;
+    padding-bottom: 20px;
+}
+
+.flex .card {
+    height: 40vh;
+}
+
+.section2 h3 {
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1.2rem;
+}
+
+nav {
+    /*overflow: hidden; */
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    /* Ensure navbar is on top */
+}
+
+ul a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+ul a:hover {
+    color: rgb(244 116 94);
+    border-radius: 6px;
+}
+
+ul a::before {
+    content: "";
+    position: absolute;
+    bottom: 9px;
+    height: 2px;
+    width: 0;
+    background: rgb(244 116 94);
+    border-radius: 50px;
+    transition: width 0.3s ease;
+}
+
+ul a:hover::before {
+    width: 70px;
+}
+
+.navbar li {
+    color: white;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: rgb(244 116 94);
+    /* Change this to the color you want */
+}
+
+footer {
+    padding: 23px;
+    background-color: rgb(244 116 94);
+    color: white;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.flex li {
+    padding: 0px 5px;
+}
+
+main h1 {
+    padding: 20px 0px;
+    font-weight: 100;
+}
+
+.nav-element {
+    color: black;
+    text-decoration: none;
+}
+
+.section3 {
+    min-height: 400px;
+}
+
+.section4 {
+    min-height: 400px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.section2-bg {
+    background-color: #f2f6f7;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.section4-bg {
+    background-color: #f2f6f7;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: none;
+}
+
+.container.mx-auto .section2 {
+    margin-left: 0;
+    margin-right: 0;
+}

@@ -1,0 +1,275 @@
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.grid-4 {
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.my-1 {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.my-2 {
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+.mtop-1 {
+    margin-top: 70px;
+}
+
+.px-2 {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.text-orange {
+    color: rgb(244 116 94);
+}
+
+.btn {
+    padding: 7px 7px;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(244 116 94);
+    border-radius: 6px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.card {
+    width: 20%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 50px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a box shadow for depth */
+}
+
+.text-white {
+    color: white;
+}
+
+.btn2 {
+    padding: 7px 7px;
+    border: 2px solid rgb(244 116 94);
+    color: rgb(244 116 94);
+    cursor: pointer;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark overlay */
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-container {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    /* Adjust the height of the video container */
+    overflow: hidden;
+}
+
+
+/* Classes for scroll reveal animation: */
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* Classes for toggle button in navbar */
+
+.toggle_btn {
+    color: rgb(244 116 94);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    padding-right: 30px;
+}
+
+.dropdown_menu {
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background-color: white;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 350px;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* media design */
+
+@media (max-width: 965px) {
+
+    .navbar li .nav-element,
+    .navbar li .btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+        z-index: 1000;
+    }
+
+    ul a:hover {
+        color: rgb(244 116 94);
+    }
+
+    ul a::before {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 550px) {
+    .logo2 {
+        font-size: 50px;
+    }
+
+    .tagline {
+        font-size: 25px;
+    }
+
+    .flex_media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        min-width: 400px;
+    }
+}
+
+@media (max-width: 550px) {
+    .logo2 {
+        font-size: 40px;
+    }
+
+    .tagline {
+        font-size: 15px;
+    }
+
+    .flex_media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        min-width: 200px;
+    }
+
+    .topLeft {
+        display: flex;
+        flex-direction: column;
+        padding-left: 100px;
+    }
+
+    .topRight {
+        display: none;
+    }
+}
+
+#landing_video {
+    position: relative;
+    z-index: 0;
+}
